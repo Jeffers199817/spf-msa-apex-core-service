@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: spf-msa-apex-core-service
+
+  # Base de datos H2 en memoria para tests
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+
+  # Configuración H2
+  h2:
+    console:
+      enabled: false
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  # Inicialización de datos para tests
+  sql:
+    init:
+      mode: never
+
+server:
+  port: 0  # Puerto aleatorio para tests
+
+logging:
+  level:
+    "[com.pichincha]": ERROR
+    "[org.springframework]": ERROR
+    "[org.hibernate]": ERROR
