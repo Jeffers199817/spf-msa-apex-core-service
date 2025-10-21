@@ -34,19 +34,36 @@ Este proyecto incluye los siguientes recursos listos para usar:
 
 ### 🐳 Despliegue con Docker
 
-#### **Opción 1: Docker Simple (Solo Backend)**
+#### **Paso 0: Clonar el Repositorio**
 
-Para construir y ejecutar el servicio en Docker:
+Primero, clona el repositorio desde GitHub:
 
 ```bash
-# Construir la imagen Docker
+# Clonar el repositorio
+git clone https://github.com/Jeffers199817/spf-msa-apex-core-service.git
+
+# Entrar al directorio del proyecto
+cd spf-msa-apex-core-service
+```
+
+#### **Opción 1: Docker Simple (Solo Backend)**
+
+Antes de construir la imagen Docker, debes compilar el proyecto:
+
+```bash
+# 1. Construir el proyecto con Gradle (genera el JAR)
+gradlew build
+
+# 2. Construir la imagen Docker
 docker build -t apex-core-service.jar .
 
-# Ejecutar el contenedor
+# 3. Ejecutar el contenedor
 docker run -p 9090:9090 apex-core-service.jar
 ```
 
-#### **Opción 2: Docker Compose (Backend + PostgreSQL) - RECOMENDADO**
+**Nota:** El comando `gradlew build` genera el archivo JAR en `build/libs/` que es necesario para el Docker.
+
+#### **Opción 2: Docker Compose (Backend + PostgreSQL) - ⭐ RECOMENDADO**
 
 El proyecto incluye configuración completa con **docker-compose.yml** que levanta:
 - ✅ Servicio backend en Java (Spring Boot)
@@ -55,18 +72,24 @@ El proyecto incluye configuración completa con **docker-compose.yml** que levan
 - ✅ Health checks y restart automático
 
 ```bash
-# Levantar todos los servicios
+# 1. Construir el proyecto con Gradle (IMPORTANTE)
+gradlew build
+
+# 2. Levantar todos los servicios con Docker Compose
 docker-compose up -d
 
-# Ver logs
+# Ver logs en tiempo real
 docker-compose logs -f
 
 # Detener servicios
 docker-compose down
 
-# Reconstruir y levantar
+# Reconstruir todo (si hay cambios en el código)
+gradlew build
 docker-compose up --build -d
 ```
+
+**⚠️ Importante:** Siempre ejecuta `gradlew build` antes de `docker-compose up` para asegurar que el JAR esté actualizado.
 
 **Servicios disponibles:**
 - Backend: `http://localhost:9090/spf-msa-apex-core-service`

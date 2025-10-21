@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.pichincha.spfmsaapexcoreservice.controller.ClientControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-21T18:27:25.592Z" hostname="DESKTOP-58RNR6C" time="0.435">
+<testsuite name="com.pichincha.spfmsaapexcoreservice.controller.ClientControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-21T18:33:32.578Z" hostname="DESKTOP-58RNR6C" time="0.45">
   <properties/>
-  <testcase name="createClient_ValidData_ShouldReturnCreatedClient()" classname="com.pichincha.spfmsaapexcoreservice.controller.ClientControllerTest" time="0.435"/>
+  <testcase name="createClient_ValidData_ShouldReturnCreatedClient()" classname="com.pichincha.spfmsaapexcoreservice.controller.ClientControllerTest" time="0.45"/>
   <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
-13:27:11.097 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.pichincha.spfmsaapexcoreservice.controller.ClientControllerTest]: ClientControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:27:11.359 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.pichincha.spfmsaapexcoreservice.OptimusApplication for test class com.pichincha.spfmsaapexcoreservice.controller.ClientControllerTest
+13:33:20.632 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.pichincha.spfmsaapexcoreservice.controller.ClientControllerTest]: ClientControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:33:20.863 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.pichincha.spfmsaapexcoreservice.OptimusApplication for test class com.pichincha.spfmsaapexcoreservice.controller.ClientControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -15,9 +15,16 @@
 
  :: Spring Boot ::                (v3.5.6)
 
-2025-10-21T13:27:18.793-05:00  INFO 20756 --- [spf-msa-apex-core-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-10-21T13:27:19.768-05:00  INFO 20756 --- [spf-msa-apex-core-service] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2025-10-21T13:27:19.784-05:00  INFO 20756 --- [spf-msa-apex-core-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-21 13:33:21 - Starting ClientControllerTest using Java 21.0.7 with PID 34916 (started by jefferson in C:\Users\jefferson\Documents\GitHub\PROYECTO-BANCO-NEXUS\spf-msa-apex-core-service)
+2025-10-21 13:33:21 - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 13:33:26 - HikariPool-1 - Starting...
+2025-10-21 13:33:27 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72a25716
+2025-10-21 13:33:27 - HikariPool-1 - Start completed.
+2025-10-21 13:33:27 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-21 13:33:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 13:33:32 - Started ClientControllerTest in 11.388 seconds (process running for 13.381)
+2025-10-21 13:33:32 - Creating client with identification: 1234567890
+2025-10-21 13:33:32 - Client created successfully with ID: 1
 ]]></system-out>
   <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (C:\Users\jefferson\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.7\fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da\byte-buddy-agent-1.17.7.jar)

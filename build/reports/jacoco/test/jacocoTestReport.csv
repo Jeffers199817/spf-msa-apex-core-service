@@ -8,7 +8,7 @@ spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.controller,ReportC
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.controller,TransactionController,100,32,0,0,22,7,5,2,5,2
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.model,CreateTransaction400Response,83,0,8,0,21,0,12,0,8,0
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.model,ClientDTO,293,66,26,0,49,28,26,19,13,19
-spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.model,TransactionDTO.TransactionTypeEnum,10,51,1,3,2,10,2,5,1,4
+spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.model,TransactionDTO.TransactionTypeEnum,6,55,1,3,1,11,1,6,0,5
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.model,TransactionDTO,239,52,22,0,41,22,22,15,11,15
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.model,ReportResponseDTO,141,0,14,0,33,0,19,0,12,0
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.model,ReportDTO,393,0,28,0,84,0,49,0,35,0
