@@ -30,7 +30,7 @@ spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.service.mapper,Tra
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.service.impl,ReportServiceImpl,39,4,0,0,6,1,1,1,1,1
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.service.impl,TransactionServiceImpl,73,499,11,37,11,109,15,33,4,20
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.service.impl,AccountServiceImpl,147,4,8,0,34,1,12,1,8,1
-spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.service.impl,PdfReportServiceImpl,1263,3,18,0,309,1,20,1,11,1
+spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.service.impl,PdfReportServiceImpl,2864,7,61,0,675,2,54,2,23,2
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.service.impl,ClientServiceImpl,123,4,2,0,29,1,8,1,7,1
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.exception,GlobalExceptionHandler.ErrorResponse.ErrorResponseBuilder,5,49,0,0,2,16,1,6,1,6
 spf-msa-apex-core-service,com.pichincha.spfmsaapexcoreservice.exception,ResourceNotFoundException,0,4,0,0,0,2,0,1,0,1
